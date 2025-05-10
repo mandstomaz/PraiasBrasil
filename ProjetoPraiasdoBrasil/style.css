@@ -1,0 +1,160 @@
+body {
+    font-family: Poppins;
+    background-color: #faedcd;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #b18962;
+    font-family: Cal Sans;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+} 
+
+h2, h3, h4 {
+    color: #d4a373;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0px;
+}
+
+a {
+    color:  #8b9273;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    background-color: #dbe1bc;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+hr {
+    width: 20%;
+    background-color: #d4a373;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.card {
+    background-color: #fbfdfd;
+    border-radius: 15px;
+    margin: 40px auto;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    height: 701px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.03);/*Aumento em 3% o tamanho do card*/
+}
+
+/*Estilizar os títulos do card*/
+
+.card-title{
+    font-size: 1.5rem;/*Modificando o tamanho*/
+    color: #b0bd87;/*Atribuindo nova cor*/
+    margin-bottom: 10px;/*Espaço abaixo do titulo*/
+    margin-left: 10px;/*Espaço à esquerda do titulo*/
+}
+
+/*Estilizar o parágrafo*/
+
+.card-text{
+    margin-left: 10px;
+    color: #444;
+}
+
+/*Ajustando a imagem*/
+
+.card-img-top{
+    margin: 5%;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+
+.btn-primary{
+    background-color: #b0bd87;/*cor de fundo*/
+    color:white;/*cor da letra*/
+    padding: 10px 16px;/*espaço interno na horizontal e vertical*/
+    border-radius: 8px;/*arrendondar as bordas*/
+    text-align: center;/*centralizar o texto*/
+    margin-left: 10px;/*espaço externo entre as bordas do botão e o limite do card*/
+}
+
+.btn-primary:hover{
+    background-color: #99a376;/*mudando a cor do botão ao deixar o cursor em cima do elemento*/
+    text-decoration: none;/*retirando traçado do link*/
+}
+
+#menu {
+    display: none;
+}
+
+.menuicone {
+    display: block;
+    background-color: #f8e9c5;
+    color: #bb8c5c;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #f8e9c5;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #92693f;
+    padding: 10px;
+    border-top: 1px solid #aa9d7d;
+    transition: background 0.5s;
+}
+
+.mobile-menu a:hover {
+    background-color: #dbcca7;
+}
+
+#menu:checked + .menuicone + .mobile-menu {
+    display: flex
+}
+
+/*Responsividade*/
+
+/*Telas pequenas*/
+
+@media(max-width:768px){
+    .card{
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
